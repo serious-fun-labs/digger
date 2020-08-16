@@ -1,0 +1,24 @@
+// pastel shades
+$primary: #6796BA;
+$danger: #FF6B68;
+$dark: #111;
+
+// dark
+$body-bg: #222;
+$body-color: #eee;
+
+// invert dark/light surfaces in alert
+$alert-bg-level: 6;
+$alert-border-level: 4;
+$alert-color-level: -10;
+
+$card-bg: #333;
+$card-cap-bg: #444;
+
+$input-bg: #333;
+$input-color: #eee;
+$input-border-color: #555;
+$input-focus-border-color: $primary;
+$input-placeholder-color: #aaa;
+
+@import '~bootstrap';
