@@ -7,6 +7,8 @@ $dark: #111;
 $body-bg: #222;
 $body-color: #eee;
 
+$border-color: #555;
+
 // invert dark/light surfaces in alert
 $alert-bg-level: 6;
 $alert-border-level: 4;
@@ -20,5 +22,7 @@ $input-color: #eee;
 $input-border-color: #555;
 $input-focus-border-color: $primary;
 $input-placeholder-color: #aaa;
+
+$list-group-bg: #333;
 
 @import '~bootstrap';

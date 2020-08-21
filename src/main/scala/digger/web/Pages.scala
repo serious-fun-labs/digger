@@ -13,12 +13,9 @@ class Pages(implicit actorSystem: ActorSystem) {
 
   val route =
     concat(
-      pathSingleSlash {
-        webAppPage
-      },
-      path("about") {
-        webAppPage
-      },
+      pathSingleSlash { webAppPage },
+      path("elasticsearch") { webAppPage },
+      path("about") { webAppPage },
       getFromDirectory(webAppPath)
     )
 

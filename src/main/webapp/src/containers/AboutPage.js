@@ -15,7 +15,7 @@ function AboutPage() {
                 </Col>
             </Row>
             <Row>
-                <Col md="8" lg={9}>
+                <Col md={8} lg={9}>
                     <Card body>
                         <Card.Title>Codename Digger</Card.Title>
                         <Card.Text>

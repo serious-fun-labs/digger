@@ -4,6 +4,7 @@ import akka.actor.ActorSystem
 import akka.http.scaladsl.Http
 import akka.http.scaladsl.server.Directives.concat
 import com.typesafe.config.{Config, ConfigFactory}
+import digger.elasticsearch.EsClient
 import digger.web._
 
 import scala.io.StdIn
@@ -11,6 +12,7 @@ import scala.io.StdIn
 object WebServerApp extends App {
   implicit val system = ActorSystem("my-system", akkaConfig)
   implicit val executionContext = system.dispatcher
+  implicit val esClient = new EsClient()
 
   val api = new Api()
   val pages = new Pages()
